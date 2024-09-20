@@ -45,6 +45,11 @@
         swaynotificationcenter
         brightnessctl
         cosmic-files
+        networkmanagerapplet
+        rofi-bluetooth
+        bluez-tools
+        nwg-bar
+        blueman
     ];
     # Enable the gnome-keyring secrets vault.
     # Will be exposed through DBus to programs willing to store secrets.

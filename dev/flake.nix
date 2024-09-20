@@ -31,7 +31,7 @@
 
       shellHook = ''
         echo "------------------------"
-        echo "|  Development Shell    |"
+        echo "|  Development Shell   |"
         echo "------------------------"
         export PS1="\e[1;34m<\u@dev>\e[0m \e[1;32m$\e[0m "
       '';

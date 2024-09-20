@@ -23,21 +23,17 @@
 	];
 
 	environment.systemPackages = with pkgs; [
-	  kdePackages.elisa
-	  kdePackages.breeze
-	  kdePackages.breeze-icons
-	  #kdePackages.kate
 	  gnome-software
 	  gnome-extension-manager
 	  gnome-tweaks
-      gnome-boxes
+    gnome-boxes
 	  adwaita-icon-theme
-	  #gnome-bluetooth
+	  gnome-bluetooth
       
       # extensions ----------
 	  gnomeExtensions.tray-icons-reloaded
 	  gnomeExtensions.dash-to-dock
-	  #gnomeExtensions.no-overview
+	  gnomeExtensions.no-overview
 	  gnomeExtensions.resource-monitor
 	  #----------------------
 

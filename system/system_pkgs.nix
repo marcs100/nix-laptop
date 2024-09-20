@@ -29,6 +29,7 @@
         neovim
         helix
         github-desktop
+        zellij
         #pkgs.scribe-cli
         #(pkgs.callPackage "path:/home/marc/nix/packages/scribe-cli/" {})
   ];
