@@ -38,7 +38,7 @@
               ./hardware-configuration.nix
               ./system/boot.nix
               ./system/settings.nix
-              ./system/system_pkgs.nix
+              ./system/sys-pkgs.nix
               ./system/gnome.nix
               ./system/sway.nix
               #./system/hyprland.nix
