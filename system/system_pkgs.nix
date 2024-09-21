@@ -28,8 +28,8 @@
         libreoffice-qt6-fresh
         neovim
         helix
-        github-desktop
         zellij
+        gitui
         #pkgs.scribe-cli
         #(pkgs.callPackage "path:/home/marc/nix/packages/scribe-cli/" {})
   ];
