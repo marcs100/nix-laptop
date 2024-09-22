@@ -6,6 +6,11 @@
   home.username = "marc";
   home.homeDirectory = "/home/marc";
 
+  home.sessionPath = [
+      "/home/marc/.local/bin"
+  ];
+  
+
   programs = {
 
     bash = {
@@ -14,9 +19,11 @@
         edit-conf = "hx ~/nix/*.nix ~/nix/system/*.nix ~/nix/home-manager/*.nix";
         nix-rebuild = "sudo nixos-rebuild switch --flake ~/nix";
         nix-rebuild-boot = "sudo nixos-rebuild boot --flake ~/nix";
+        nix-rebuild-dry = "sudo nixos-rebuild dry-build --flake ~/nix";
         nix-clean = "sudo nix-env --delete-generations +5 --profile /nix/var/nix/profiles/system && nix-collect-garbage && sudo nixos-rebuild boot --flake ~/nix";
         devshell = "nix develop ~/nix/dev";
         nix-gens = "sudo nix-env --list-generations --profile /nix/var/nix/profiles/system";    
+        qpkg = "qpkg.sh";
       };
     };
 
@@ -40,7 +47,7 @@
         set mouse=a
         set tabstop=4
         set expandtab
-		set shiftwidth=4 smarttab        
+    		set shiftwidth=4 smarttab        
         set ignorecase
         set smartcase
         set number
