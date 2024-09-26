@@ -10,7 +10,6 @@
 
     environment.systemPackages = with pkgs; [
         vim #this will be managed by home manager
-        brave
         git
         curl
         wget
