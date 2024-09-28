@@ -5,6 +5,8 @@
     #  ./hardware-configuration.nix
     #];
 
+    zramSwap.enable = true;
+
     #enable 3D acceleration
     hardware.graphics = {
           enable = true;

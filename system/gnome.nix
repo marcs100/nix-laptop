@@ -35,6 +35,7 @@
 	  gnomeExtensions.dash-to-dock
 	  gnomeExtensions.no-overview
 	  gnomeExtensions.resource-monitor
+	  gnomeExtensions.ddterm
 	  #----------------------
 
 	];
