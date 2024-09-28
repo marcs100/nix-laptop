@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 {
     #imports =
     #[ # Include the results of the hardware scan.
@@ -6,6 +6,21 @@
     #];
 
     zramSwap.enable = true;
+
+    #enable automatic upgrades
+    system.autoUpgrade = {
+        enable = true;
+        flake = inputs.self.outPath;
+        #flake = "${config.users.users.gaetan.home}/server";
+        flags = [
+            "--update-input"
+            "nixpkgs"
+            "-L" # print build logs
+        ];
+        dates = "02:00";
+        randomizedDelaySec = "45min";
+    };
+
 
     #enable 3D acceleration
     hardware.graphics = {
