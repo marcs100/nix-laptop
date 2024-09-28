@@ -26,7 +26,6 @@
 	  gnome-software
 	  gnome-extension-manager
 	  gnome-tweaks
-    gnome-boxes
 	  adwaita-icon-theme
 	  gnome-bluetooth
       
