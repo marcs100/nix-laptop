@@ -18,6 +18,7 @@
       packages = with pkgs; [
         rustc
         cargo
+        clippy
         rust-analyzer
         python312
         python312Packages.tkinter
